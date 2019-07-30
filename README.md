@@ -1,6 +1,6 @@
 # sql_example
 
-Example sql scripts
+Example sql database
 
 # Description
 
@@ -10,22 +10,28 @@ Allows scripting using an sqlite database
 ```
 git clone git@github.com:ashwinmr/sql_example.git
 cd sql_example
+python main.py
+```
+
+## Manipulate database using sqlite
+
+```
 sqlite3 example.db
 ```
 
-## Show tables
+### Show tables
 ```
 sqlite> .tables
 ```
 
-## Preview data in table
+### Preview data in table
 ```
 sqlite> .mode column
 sqlite> .headers on
 sqlite> select * from <table_name> limit 10;
 ```
 
-## Exit
+### Exit
 ```
 sqlite> .exit
 ```
